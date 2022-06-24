@@ -35,9 +35,12 @@ This method returns a DynamicArray that contains all the keys stored in the hash
 
 * find_mode(arr: DynamicArray) -> (DynamicArray, int):
 Write a standalone function outside of the HashMap class that receives a DynamicArray (that is not guaranteed to be sorted). This function will return a tuple containing, in this order, a DynamicArray comprising the mode (most occurring) value/s of the array, and an integer that represents the highest frequency (how many times they appear).
+
 If there is more than one value with the highest frequency, all values at that frequency should be included in the array being returned (the order does not matter). If there is only one mode, return a DynamicArray comprised of only that value.
+
 You may assume that the input array will contain at least one element, and that all values stored in the array will be strings. You do not need to write checks for these conditions.
-For full credit, the function must be implemented with O(N) time complexity. For best results, we recommend using the separate chaining HashMap provided for you in the function’s skeleton code.
+
+The function is implemented with O(N) time complexity.
 
 # 2. HashMap class with open addressing for collision resolution:
 
